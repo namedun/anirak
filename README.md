@@ -13,6 +13,8 @@
 
 <a href="https://marketplace.visualstudio.com/items?itemName=barjo.anirak">`ext install barjo.anirak`</a>
 
+<br>
+
 ## Recommended settings
 ```json
 "editor.renderLineHighlight": "all",
