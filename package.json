@@ -1,0 +1,50 @@
+{
+	"name": "anirak",
+	"displayName": "Anirak",
+	"description": "Anirak is a modern dark theme, designed to be soothing to the eyes and refreshing to the mind.",
+	"icon": "./logos/anirak_circular.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/barjoco/anirak.git"
+	},
+	"version": "5.0.0",
+	"publisher": "barjo",
+	"author": {
+		"name": "barjo"
+	},
+	"galleryBanner": {
+		"color": "#0c0d10",
+		"theme": "dark"
+	},
+	"keyword": [
+		"anirak",
+		"barjo",
+		"dark",
+		"minimal",
+		"minimalist",
+		"minimalistic",
+		"duotone",
+		"modern",
+		"blue"
+	],
+	"engines": {
+		"vscode": "^1.42.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Anirak",
+				"uiTheme": "vs-dark",
+				"path": "./vs-code/src/theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "8dfa4272-5718-4324-84ab-04d346ee906b",
+		"publisherDisplayName": "barjo",
+		"publisherId": "af3db1fa-b039-4443-a637-089bea4797c7"
+	}
+}
