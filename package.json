@@ -2,7 +2,7 @@
 	"name": "anirak",
 	"displayName": "Anirak",
 	"description": "Anirak is a modern dark theme, designed to be soothing to the eyes and refreshing to the mind.",
-	"icon": "./logos/anirak_circular.png",
+	"icon": "logos/anirak_circular.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/barjoco/anirak.git"
