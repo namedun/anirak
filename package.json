@@ -38,7 +38,7 @@
 			{
 				"label": "Anirak",
 				"uiTheme": "vs-dark",
-				"path": "./vs-code/src/theme.json"
+				"path": "apps/vs-code/src/theme.json"
 			}
 		]
 	},

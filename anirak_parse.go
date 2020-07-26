@@ -16,9 +16,9 @@ var colours = map[string]string{
 	"red":                "#ff4766",
 	"green":              "#17ff93",
 	"yellow":             "#ffdc69",
-	"blue":               "#303eff",
-	"magenta":            "#599aff",
-	"cyan":               "#9ccdff",
+	"blue":               "#4e6bff",
+	"magenta":            "#66a2ff",
+	"cyan":               "#abd5ff",
 	"white":              "#f0f8ff",
 	"hi_black":           "#3a434d",
 	"hi_red":             "#ff8398",
@@ -90,7 +90,7 @@ func main() {
 					log.Info("Run --help on its own: akparse --help")
 					os.Exit(1)
 				}
-				fmt.Println("Usage:\n\takparse --type=filein ...\n\takparse --type=filein:fileout ...\n\nDescription:\n\tUsed to parse any number of files with the anirak theme.\n\tIf fileout isn't specified, the file name will be 'filein.anirak'.\n\nTypes:\n\t--hex\t outputs: #ff0000\n\t--hex0\t outputs: 0xff0000\n\t--rgb\t outputs: rgb(255, 0, 0)\n\nExample:\n\takparse --rgb=template.json:theme.json")
+				fmt.Println("Usage:\n\takparse --type=filein ...\n\takparse --type=filein:fileout ...\n\nDescription:\n\tUsed to parse any number of files with the anirak theme. If fileout\n\tisn't specified, the output file name will be 'filein.anirak'.\n\nTypes:\n\t--hex\t outputs: #ff0000\n\t--hex0\t outputs: 0xff0000\n\t--rgb\t outputs: rgb(255, 0, 0)\n\nExample:\n\takparse --hex=template.json:theme.json")
 			case "hex":
 				parse(fileIn, fileOut, 0)
 			case "hex0":
@@ -101,7 +101,7 @@ func main() {
 				log.Error("Unknown argument: %s", conversion)
 			}
 		} else {
-			log.ErrorFatal("Arguments must be formatted: --type=file/path. Run --help for more info")
+			log.ErrorFatal("Arguments must be formatted: --type=filein:fileout. Run --help for more info")
 		}
 	}
 }

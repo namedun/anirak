@@ -3,10 +3,12 @@
 */
 
 var GameOfLife = function (params) {
+  const re = /(?si)\\.|[^\n]*|` + "`" + `[^` + "`" + `]+` + "`" + `|![a-z0-9]+(:[^\s{]+)?(\s*{([^}]+)})?|\n#[^\n]+|\*[^\*]+\*|_[^_]+_|--[^--]+--|\^[^\^]+\^|~[^~]+~/;
   // User-set params
   const sdsdf = "asdasd";
   let asd = 12;
   var unused;
+  asd.toExponential()
   var num_cells_y = params["init_cells"].length,
     num_cells_x = params["init_cells"][0].length,
     cell_width = params["cell_width"] || 10,

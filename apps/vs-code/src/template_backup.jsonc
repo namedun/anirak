@@ -144,7 +144,7 @@
 		"tab.inactiveModifiedBorder": "--transparent--", // Border on the top of modified (dirty) inactive tabs in an active group.
 		"tab.unfocusedActiveModifiedBorder": "--transparent--", // Border on the top of modified (dirty) active tabs in an unfocused group.
 		"tab.unfocusedInactiveModifiedBorder": "--transparent--", // Border on the top of modified (dirty) inactive tabs in an unfocused group.
-		"editorPane.background": "--red--", // Background color of the editor pane visible on the left and right side of the centered editor layout.
+		"editorPane.background": "--background1_border--", // Background color of the editor pane visible on the left and right side of the centered editor layout.
 		// Editor colors
 		"editor.background": "--background0--", // Editor background color.
 		"editor.foreground": "--white--", // Editor default foreground color.
@@ -305,7 +305,7 @@
 		"menu.border": "--background2_border--", // Border color of menus.
 		// Integrated terminal colors
 		"terminal.background": "--background0--", // The background of the Integrated Terminal's viewport.
-		"terminal.border": "transparent", // The color of the border that separates split panes within the terminal. This defaults to panel.border.
+		"terminal.border": "--background1_border--", // The color of the border that separates split panes within the terminal. This defaults to panel.border.
 		"terminal.foreground": "--hi_white--", // The default foreground color of the Integrated Terminal.
 		"terminal.ansiBlack": "--black--", // 'Black' ANSI color in the terminal.
 		"terminal.ansiBlue": "--blue--", // 'Blue' ANSI color in the terminal.
