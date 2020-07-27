@@ -92,5 +92,3 @@ button:disabled {
   position: absolute;
   clip: rect(0, 0, 0, 0);
 }
-
-.chat_people .post_item:hover .post_item__body.trunc::after {}
