@@ -1,6 +1,9 @@
 # Change Log
 
+## 5.1.2
 
-## 5.1.0
+- minor fixes
+
+## 5.1.1
 
 - large portion of the syntax rewritten

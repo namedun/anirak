@@ -273,7 +273,7 @@
 		"statusBar.background": "#111217", // Standard Status Bar background color.
 		"statusBar.foreground": "#f0f8ff", // Status Bar foreground color.
 		"statusBar.border": "#00000000", // Status Bar border color separating the Status Bar and editor.
-		"statusBar.debuggingBackground": "#17ff93", // Status Bar background color when a program is being debugged.
+		"statusBar.debuggingBackground": "#4e6bff", // Status Bar background color when a program is being debugged.
 		"statusBar.debuggingForeground": "#f0f8ff", // Status Bar foreground color when a program is being debugged.
 		"statusBar.debuggingBorder": "#00000000", // Status Bar border color separating the Status Bar and editor when a program is being debugged.
 		"statusBar.noFolderBackground": "#111217", // Status Bar background color when no folder is opened.
@@ -464,7 +464,8 @@
 		{
 			"scope": [
 				"string",
-				"punctuation.definition.string"
+				"punctuation.definition.string",
+				"storage.modifier.import"
 			],
 			"settings": {
 				"foreground": "#66a2ff"
@@ -472,8 +473,18 @@
 		},
 		{
 			"scope": [
+				"entity.name.import"
+			],
+			"settings": {
+				"foreground": "#66a2ff",
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"scope": [
 				"constant",
-				"keyword.other.unit"
+				"keyword.other.unit",
+				"punctuation.definition.entity.html"
 			],
 			"settings": {
 				"foreground": "#17ff93",

@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+
 public class preview {
 	public static void main(String[] args) {
 		String[] dish = { "_#_", "_#_", "_#_", };
