@@ -1,0 +1,91 @@
+<?
+require 'view/template/header.phtml';
+require 'view/template/top_bar.phtml';
+require 'view/template/nav.phtml';
+?>
+
+<main>
+  <div class="page">
+    <div class="page_header">
+      <div class="postfix_icon">
+        <h2>Chat</h2>
+        <img src="static/img/nav/chat.svg">
+      </div>
+      <div>
+        <? if (isset($_GET['c'])) { ?>
+          <h4>Chatting with
+            <?
+            $recip = $db->get_user_by_id($_GET['c']);
+            echo $recip['username'];
+            ?>
+          </h4>
+        <? } ?>
+      </div>
+    </div>
+
+    <div class="chat_wrapper">
+      <div class="chat_people">
+        <div class="chat_people_search">
+          <form action="/controller/search.php" method="POST" id="people_form">
+            <input id="people_search" type="text" name="chat_people_search" placeholder="Search..." required>
+            <button name="chat_people_search_submit" type="submit">
+              <img src="static/img/icon/search.svg" alt="Logo">
+            </button>
+          </form>
+          <div class="chat_people__results" id="people_results"></div>
+        </div>
+        <ul id="chat_people_list">
+          <?
+          $uid = $_SESSION['uid'];
+          $chats = $db->get_chats($uid);
+          while ($post = $db->fetch_from($chats)) {
+            $is_message = true;
+            $post['title'] = '';
+            $recipient = $post['author'];
+            if (isset($_GET['c']) && $_GET['c'] == $recipient) {
+              echo "<li data-recipient='$recipient' class='active'>";
+            } else {
+              echo "<li data-recipient='$recipient'>";
+            }
+            require 'view/template/post.phtml';
+            echo '</li>';
+          }
+          ?>
+        </ul>
+      </div>
+
+      <div class="chat_main">
+
+        <div class="chat_main__messages" id="chat_messages">
+          <? if (isset($_GET['c'])) {
+            $messages = $db->get_chat($uid, $_GET['c']);
+            if ($messages->num_rows > 0) {
+              while ($message = $db->fetch_from($messages)) {
+                require 'view/template/bubble.phtml';
+              }
+            }
+          ?>
+          <? } ?>
+        </div>
+
+        <div class="chat_main_input" data-typing="" id="chat_wrapper">
+          <? if (isset($_GET['c'])) { ?>
+            <form id="chat_main__form">
+              <input id="chat_main__form_field" type="text" name="chat_main_input" placeholder="Send a message...">
+              <input type="text" id="user_id" value="<? echo $db->get_user_by_id($uid)['id'] ?>" hidden>
+              <input type="text" id="user_hash" value="<? echo $db->get_user_by_id($uid)['password'] ?>" hidden>
+              <button name="chat_main_input_submit" type="submit">
+                <img src="static/img/icon/compose.svg" alt="Logo">
+              </button>
+            </form>
+          <? } ?>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script src="static/js/chat.js"></script>
+
+<? require 'view/template/footer.phtml' ?>

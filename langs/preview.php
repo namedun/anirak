@@ -300,4 +300,15 @@ class Game
         }
         return " Gen: {$this->frame_count} | Cells: $live_cells | Elapsed Time: {$elapsed_time}s | FPS: {$fps}";
     }
+
+    // Insert user into db, returns the insert id
+  public function insert_user($first_name, $last_name, $username, $email, $password) {
+    $this->exec(
+      'INSERT INTO users VALUES (NULL, ?, ?, ?, ?, ?, 1, 1, DEFAULT)',
+      'sssss',
+      $first_name, $last_name, $username, $email, $password
+    );
+
+    return mysqli_insert_id($this->conn);
+  }
 }

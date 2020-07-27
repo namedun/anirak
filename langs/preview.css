@@ -1,3 +1,11 @@
+:root {
+  --theme: #ff5e5a;
+  --theme_gradient: linear-gradient(to bottom right, #fd7272, #fa3a3a);
+  --theme_light: rgb(255, 198, 198);
+  --theme_shadow: 0 2px 6px 0 rgba(170, 0, 0, 0.25);
+  --colour_by_theme: invert(75%) sepia(1) saturate(500%) brightness(170%) hue-rotate(315deg);
+}
+
 * {
   padding: 0;
   margin: 0;

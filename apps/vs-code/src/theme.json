@@ -273,7 +273,7 @@
 		"statusBar.background": "#111217", // Standard Status Bar background color.
 		"statusBar.foreground": "#f0f8ff", // Status Bar foreground color.
 		"statusBar.border": "#00000000", // Status Bar border color separating the Status Bar and editor.
-		"statusBar.debuggingBackground": "#71faba", // Status Bar background color when a program is being debugged.
+		"statusBar.debuggingBackground": "#17ff93", // Status Bar background color when a program is being debugged.
 		"statusBar.debuggingForeground": "#f0f8ff", // Status Bar foreground color when a program is being debugged.
 		"statusBar.debuggingBorder": "#00000000", // Status Bar border color separating the Status Bar and editor when a program is being debugged.
 		"statusBar.noFolderBackground": "#111217", // Status Bar background color when no folder is opened.
@@ -368,7 +368,13 @@
 				"keyword.type.cs",
 				"keyword.other.var",
 				"support.type",
-				"variable.language.this"
+				"variable.language.this",
+				"entity.name.tag.yaml",
+				"keyword.other.DML",
+				"keyword.other.sql",
+				"support.type.property-name.css",
+				"variable.css",
+				"keyword.other.DDL"
 			],
 			"settings": {
 				"foreground": "#abd5ff",
@@ -380,11 +386,25 @@
 				"keyword",
 				"punctuation",
 				"keyword.operator",
-				"meta.brace"
+				"meta.brace",
+				"meta.selector",
+				"meta.tag",
+				"punctuation.section.embedded.begin.php",
+				"punctuation.section.embedded.end.php",
+				"source.php"
 			],
 			"settings": {
 				"foreground": "#deebff80",
 				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"entity.other.attribute-name.pseudo-class"
+			],
+			"settings": {
+				"foreground": "#deebff80",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -411,7 +431,9 @@
 			"scope": [
 				"entity.name.function",
 				"support.function",
-				"entity.other.attribute-name"
+				"entity.other.attribute-name",
+				"entity.name.tag.css",
+				"entity.name.tag.wildcard"
 			],
 			"settings": {
 				"foreground": "#f0f8ff",
@@ -420,14 +442,19 @@
 		},
 		{
 			"scope": [
-				"support.type.property-name.css",
 				"entity.other.attribute-name.html",
 				"support.class",
 				"support.type.property-name.json",
 				"variable.other",
 				"punctuation.section.embedded.begin",
 				"punctuation.section.embedded.end",
-				"source.swift"
+				"source.swift",
+				"entity.name.tag.yaml",
+				"constant.language.boolean.yaml",
+				"support.constant.property-value.css",
+				"support.constant.color",
+				"entity.other.attribute-name.css",
+				"entity.other.attribute-name.localname"
 			],
 			"settings": {
 				"foreground": "#f0f8ff",
@@ -446,7 +473,6 @@
 		{
 			"scope": [
 				"constant",
-				"support.constant.property-value.css",
 				"keyword.other.unit"
 			],
 			"settings": {
