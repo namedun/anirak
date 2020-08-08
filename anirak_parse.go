@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/barjoco/go-utils/log"
+	"github.com/barjoco/utils/log"
 )
 
 // Colour theme definition
