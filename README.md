@@ -15,23 +15,20 @@
 
 ## Maintenance
 
-The Anirak theme is being actively maintained, please [open a new issue](https://github.com/barjoco/anirak/issues) if you notice any problems with theme, even a very small detail.
+The Anirak theme is being actively maintained, please [open a new issue](https://github.com/barjoco/anirak/issues) if you notice any problems with theme, even something small!
 
 ## Recommended settings
 ```json
 "editor.renderLineHighlight": "all",
-"editor.minimap.renderCharacters": false
-```
-
-### Enhancements
-```json
+"editor.minimap.renderCharacters": false,
 "editor.cursorSmoothCaretAnimation": true,
 "editor.smoothScrolling": true,
 "editor.renderIndentGuides": true,
 "window.menuBarVisibility": "toggle",
 "workbench.iconTheme": "quill-icons"
 ```
-[Recommended icon pack](https://marketplace.visualstudio.com/items?itemName=cdonohue.quill-icons)
+
+📁 [Recommended icon pack](https://marketplace.visualstudio.com/items?itemName=cdonohue.quill-icons)
 
 # Screenshots
 
@@ -43,8 +40,24 @@ The Anirak theme is being actively maintained, please [open a new issue](https:/
 
 # Other apps
 
-The Anirak theme is available for other apps. Feel free to [contact](mailto:barjo.business@gmail.com) and request an app for an Anirak theme.
+The Anirak theme is available for other apps. Feel free to [contact](mailto:barjo.business@gmail.com) and request an app for the Anirak theme.
 
 <a style="font-size:large;" href="https://github.com/barjoco/anirak/blob/master/apps/alacritty/src/alacritty.yml">Alacritty</a>
 
-<img src="https://raw.githubusercontent.com/barjoco/anirak/master/apps/alacritty/img/preview.png"/>
+<img src="https://raw.githubusercontent.com/barjoco/anirak/master/apps/alacritty/img/preview.png" width="600"/>
+
+<br>
+
+<a style="font-size:large;" href="https://github.com/barjoco/dots/tree/master/spicetify/Themes/Anirak">Spotify</a>
+
+To use this theme, first install [Spicetify](https://github.com/khanhas/spicetify-cli)
+
+Then, `mkdir ~/.config/Spicetify/Themes/Anirak`
+
+Download and move `colors.ini` and `user.css` into the Anirak theme folder
+
+Run `spicetify apply`
+
+Done!
+
+<img src="https://raw.githubusercontent.com/barjoco/anirak/master/apps/spicetify/img/preview.png" width="600"/>
