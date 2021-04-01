@@ -1,12 +1,12 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/barjoco/anirak/master/logos/anirak_circular.png" width="100"/>
+    <img src="https://raw.githubusercontent.com/barjoco/anirak/master/img/logos/anirak_circular.png" width="100"/>
     <br>
     <a style="font-size:larger;" href="https://github.com/barjoco/anirak">Anirak Theme for Visual Studio Code</a>
     <br>
     <span>Supported Languages:</span>
     <i>C, C++, C#, CSS, SCSS, Go, HTML, Java, JS, JSON, Lua, <br> PHP, PHTML, Perl, Python, Ruby, Rust, Shell, SQL, Swift, TypeScript, YAML</i>
     <br><br>
-    <img src="https://raw.githubusercontent.com/barjoco/anirak/master/apps/vs-code/img/preview2.png" width="600"/>
+    <img src="https://raw.githubusercontent.com/barjoco/anirak/master/img/preview.png" width="600"/>
 </p>
 
 ## Install
@@ -33,31 +33,44 @@ The Anirak theme is being actively maintained, please [open a new issue](https:/
 # Screenshots
 
 ## Minimal preview
-<img src="https://raw.githubusercontent.com/barjoco/anirak/master/apps/vs-code/img/minimal_preview2.png"/>
+<img src="https://raw.githubusercontent.com/barjoco/anirak/master/img/minimal_preview.png"/>
 
 ## Busy preview
-<img src="https://raw.githubusercontent.com/barjoco/anirak/master/apps/vs-code/img/busy_preview2.png"/>
+<img src="https://raw.githubusercontent.com/barjoco/anirak/master/img/busy_preview.png"/>
 
 # Other apps
 
 The Anirak theme is available for other apps. Feel free to [contact](mailto:barjo.business@gmail.com) and request an app for the Anirak theme.
 
-<a style="font-size:large;" href="https://github.com/barjoco/anirak/blob/master/apps/alacritty/src/alacritty.yml">Alacritty</a>
+## Alacritty
 
-<img src="https://raw.githubusercontent.com/barjoco/anirak/master/apps/alacritty/img/preview.png" width="600"/>
+<img src="https://raw.githubusercontent.com/barjoco/anirak/master/img/alacritty.png" width="600"/>
 
-<br>
+### Instructions
 
-<a style="font-size:large;" href="https://github.com/barjoco/dots/tree/master/spicetify/Themes/Anirak">Spotify</a>
+Replace the `colors` block in your alacritty.yml file to the contents below:
 
-To use this theme, first install [Spicetify](https://github.com/khanhas/spicetify-cli)
-
-Then, `mkdir ~/.config/Spicetify/Themes/Anirak`
-
-Download and move `colors.ini` and `user.css` into the Anirak theme folder
-
-Run `spicetify apply`
-
-Done!
-
-<img src="https://raw.githubusercontent.com/barjoco/anirak/master/apps/spicetify/img/preview.png" width="600"/>
+```yaml
+colors:
+  primary:
+    background: '0x020408'
+    foreground: '0xf0f8ff'
+  normal:
+    black:   '0x1e2227'
+    red:     '0xff4766'
+    green:   '0x17ff93'
+    yellow:  '0xffdc69'
+    blue:    '0x4e6bff'
+    magenta: '0x66a2ff'
+    cyan:    '0xabd5ff'
+    white:   '0xf0f8ff'
+  bright:
+    black:   '0x3a434d'
+    red:     '0xff8398'
+    green:   '0x71faba'
+    yellow:  '0xffe89e'
+    blue:    '0x6e86ff'
+    magenta: '0x80b2ff'
+    cyan:    '0xc9e4ff'
+    white:   '0xffffff'
+```

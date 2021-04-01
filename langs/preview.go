@@ -7,6 +7,8 @@ import (
 	"time"
 )
 
+
+
 type field struct {
 	s    [][]bool
 	w, h int
@@ -18,6 +20,10 @@ func newField(w, h int) field {
 		s[i] = make([]bool, w)
 	}
 	return field{s: s, w: w, h: h}
+}
+
+func (w http.ResponseWriter, r *http.Request) {
+	
 }
 
 func (f field) Set(x, y int, b bool) {
