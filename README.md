@@ -1,12 +1,12 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/barjoco/anirak/master/img/logos/anirak_circular.png" width="100"/>
+    <img src="https://raw.githubusercontent.com/barjoio/anirak/master/img/logos/anirak_circular.png" width="100"/>
     <br>
-    <a style="font-size:larger;" href="https://github.com/barjoco/anirak">Anirak Theme for Visual Studio Code</a>
+    <a style="font-size:larger;" href="https://github.com/barjoio/anirak">Anirak Theme for Visual Studio Code</a>
     <br>
     <span>Supported Languages:</span>
     <i>C, C++, C#, CSS, SCSS, Go, HTML, Java, JS, JSON, Lua, <br> PHP, PHTML, Perl, Python, Ruby, Rust, Shell, SQL, Swift, TypeScript, YAML</i>
     <br><br>
-    <img src="https://raw.githubusercontent.com/barjoco/anirak/master/img/preview.png" width="600"/>
+    <img src="https://raw.githubusercontent.com/barjoio/anirak/master/img/preview.png" width="600"/>
 </p>
 
 ## Install
@@ -15,7 +15,7 @@
 
 ## Maintenance
 
-The Anirak theme is being actively maintained, please [open a new issue](https://github.com/barjoco/anirak/issues) if you notice any problems with theme, even something small!
+The Anirak theme is being actively maintained, please [open a new issue](https://github.com/barjoio/anirak/issues) if you notice any problems with theme, even something small!
 
 ## Recommended settings
 ```json
@@ -33,10 +33,10 @@ The Anirak theme is being actively maintained, please [open a new issue](https:/
 # Screenshots
 
 ## Minimal preview
-<img src="https://raw.githubusercontent.com/barjoco/anirak/master/img/minimal_preview.png"/>
+<img src="https://raw.githubusercontent.com/barjoio/anirak/master/img/minimal_preview.png"/>
 
 ## Busy preview
-<img src="https://raw.githubusercontent.com/barjoco/anirak/master/img/busy_preview.png"/>
+<img src="https://raw.githubusercontent.com/barjoio/anirak/master/img/busy_preview.png"/>
 
 # Other apps
 
@@ -44,7 +44,7 @@ The Anirak theme is available for other apps. Feel free to [contact](mailto:barj
 
 ## Alacritty
 
-<img src="https://raw.githubusercontent.com/barjoco/anirak/master/img/alacritty.png" width="600"/>
+<img src="https://raw.githubusercontent.com/barjoio/anirak/master/img/alacritty.png" width="600"/>
 
 ### Instructions
 

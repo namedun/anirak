@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/barjoco/utils/log"
+	"github.com/barjoio/utils/log"
 )
 
 // Colour theme definition

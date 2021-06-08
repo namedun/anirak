@@ -171,7 +171,7 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Anirak https://github.com/barjoco/anirak)
+# Colors (Anirak https://github.com/barjoio/anirak)
 colors:
   primary:
     background: '0x020408'
