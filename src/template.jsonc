@@ -148,7 +148,7 @@
 		// Editor colors
 		"editor.background": "--background0--", // Editor background color.
 		"editor.foreground": "--white--", // Editor default foreground color.
-		"editorLineNumber.foreground": "--bluewhite20--", // Color of editor line numbers.
+		"editorLineNumber.foreground": "--bluewhite30--", // Color of editor line numbers.
 		"editorLineNumber.activeForeground": "--bluewhite--", // Color of the active editor line number.
 		"editorCursor.background": "--white--", // The background color of the editor cursor. Allows customizing the color of a character overlapped by a block cursor.
 		"editorCursor.foreground": "--blue--", // Color of the editor cursor.
@@ -288,9 +288,9 @@
 		"statusBarItem.remoteForeground": "--white--", // Foreground color for the remote indicator on the status bar.
 		// Title bar
 		"titleBar.activeBackground": "--background0--", // Title Bar background when the window is active.
-		"titleBar.activeForeground": "--background0--", // Title Bar foreground when the window is active.
+		"titleBar.activeForeground": "--bluewhite80--", // Title Bar foreground when the window is active.
 		"titleBar.inactiveBackground": "--background0--", // Title Bar background when the window is inactive.
-		"titleBar.inactiveForeground": "--background0--", // Title Bar foreground when the window is inactive.
+		"titleBar.inactiveForeground": "--bluewhite50--", // Title Bar foreground when the window is inactive.
 		"titleBar.border": "--background0--", // Title bar border color.
 		// Menu bar colors
 		"menubar.selectionForeground": "--white--", // Foreground color of the selected menu item in the menubar.
