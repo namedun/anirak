@@ -12,6 +12,7 @@ import (
 
 // Colour theme definition
 var colours = map[string]string{
+	"foreground":         "#c0c8cf",
 	"black":              "#1e2227",
 	"red":                "#ff4766",
 	"green":              "#17ff93",
